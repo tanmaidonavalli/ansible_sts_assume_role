@@ -33,4 +33,8 @@
         AWS_SECRET_ACCESS_KEY: "{{ hostvars['localhost']['assumed_role'].sts_creds.secret_key }}"
         AWS_SESSION_TOKEN: "{{ hostvars['localhost']['assumed_role'].sts_creds.session_token }}"
       register: sg
+      
+    - amazon.aws.s3_bucket:
+        name: mys3bucket
+        state: present
 
