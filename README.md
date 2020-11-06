@@ -10,6 +10,8 @@ working directory.
 
 To run playbook 
 ansible-playbook test.yml -vvv
+
+
 Requirements:
 * Ansible 2.2.0
 * Pre-configured AWS accounts (default account and account to assume role into)
